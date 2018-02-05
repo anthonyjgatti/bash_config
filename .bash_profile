@@ -45,7 +45,6 @@ git config --global user.name "anthonyjgatti"
 
 # Bash functional aliases.
 alias ls='ls -laGH'
-alias v='vim'
 alias dl='fc -s'
 alias ..='cd ..'
 
@@ -71,9 +70,11 @@ fi
 
 # Copy desired files to backup directory for version control.
 COLOR_SCHEME="monokai.vim"
-cp -fr $HOME/.vimrc $CONFIG_DIR/.vimrc
-cp -fr $HOME/.gitconfig $CONFIG_DIR/.gitconfig
-cp -fr $HOME/.vim/colors/$COLOR_SCHEME $CONFIG_DIR/.vim/colors/$COLOR_SCHEME
-cp -fr $HOME/.bash_profile $CONFIG_DIR/.bash_profile
+if [ -f '/Users/anthony/.status' ]; then
+    cp -fr $HOME/.vimrc $CONFIG_DIR/.vimrc
+    cp -fr $HOME/.gitconfig $CONFIG_DIR/.gitconfig
+    cp -fr $HOME/.vim/colors/$COLOR_SCHEME $CONFIG_DIR/.vim/colors/$COLOR_SCHEME
+    cp -fr $HOME/.bash_profile $CONFIG_DIR/.bash_profile
+fi
 ### Add more here, including check for file changes and then git push.
 
