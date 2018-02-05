@@ -5,6 +5,7 @@ export PS1="\u@\w$ "
 
 # Customization of terminal.
 export LSCOLORS="ExfxcxdxBxegecabagacad"
+export LS_COLORS="ExfxcxdxBxegecabagacad"
 
 # Aliases for environment variables.
 export JAVA_HOME=/Library/Java/Home
