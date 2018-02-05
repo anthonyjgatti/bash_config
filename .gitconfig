@@ -1,0 +1,5 @@
+[user]
+	name = anthonyjgatti
+	email = anthony.j.gatti@gmail.com
+[credential]
+	helper = osxkeychain
