@@ -4,15 +4,21 @@ filetype off
 
 " Set up for Vundle.
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" Start Vundle.
 call vundle#begin()
+
+" Let Vundle manage Vundle.
 Plugin 'VundleVim/Vundle.vim'
+
+" Management plugins.
+Plugin 'christoomey/vim-tmux-navigator'
+
+" End Vundle.
 call vundle#end()
 filetype plugin indent on
 
-" Add plugins.
-Plugin 'christoomey/vim-tmux-navigator'
-
-" Add syntax highlighting and change color scheme.
+" Add syntax highlighting and color scheme.
 syntax on
 colo monokai
 

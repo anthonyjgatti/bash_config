@@ -75,6 +75,7 @@ if [ -f '/Users/anthony/.status' ]; then
     cp -fr $HOME/.vimrc $CONFIG_DIR/.vimrc
     cp -fr $HOME/.gitconfig $CONFIG_DIR/.gitconfig
     cp -fr $HOME/.vim/colors/$COLOR_SCHEME $CONFIG_DIR/.vim/colors/$COLOR_SCHEME
+    cp -fr $HOME/.vim/bundle $CONFIG_DIR/.vim
     cp -fr $HOME/.bash_profile $CONFIG_DIR/.bash_profile
 fi
 ### Add more here, including check for file changes and then git push.
